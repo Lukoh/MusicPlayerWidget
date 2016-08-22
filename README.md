@@ -8,8 +8,7 @@ Please comment(block) below code whenever you run the instrumented unit test for
 stopForeground(true) & startForeground(NOTIFICATION_ID, mNotificationBuilder.build());
 
 ## Demo Video
-
-https://youtu.be/25Pp254OEbg
+Here is [demo video](https://youtu.be/25Pp254OEbg). Please watch this demo video if you'd like to know how MusicPlayerWidget runs.
 
 ##Screenshots
 <img src="https://github.com/Lukoh/MusicPlayerWidget/blob/master/Screenshot_3.png" alt="Log-in Demo" width="350" />
