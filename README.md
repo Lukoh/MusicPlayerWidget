@@ -1,6 +1,8 @@
 # MusicPlayerWidget
 This is simple MusicPlayerWidget.
 
+## Notice
+
 ##Screenshots
 <img src="https://github.com/Lukoh/MusicPlayerWidget/blob/master/Screenshot_3.png" alt="Log-in Demo" width="350" />
 &nbsp;
