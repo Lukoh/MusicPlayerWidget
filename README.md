@@ -10,7 +10,7 @@ stopForeground(true) & startForeground(NOTIFICATION_ID, mNotificationBuilder.bui
 ##Screenshots
 <img src="https://github.com/Lukoh/MusicPlayerWidget/blob/master/Screenshot_3.png" alt="Log-in Demo" width="350" />
 &nbsp;
-<img src="https://github.com/Lukoh/MusicPlayerWidget/blob/master/Screenshot_4.png" alt="Log-in Demo" width="350" />
+<img src="https://github.com/Lukoh/MusicPlayerWidget/blob/master/Screenshot_5.png" alt="Log-in Demo" width="350" />
 &nbsp;
 <img src="https://github.com/Lukoh/MusicPlayerWidget/blob/master/Screenshot_1.png" alt="Log-in Demo" width="350" />
 &nbsp;
