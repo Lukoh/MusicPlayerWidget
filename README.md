@@ -1,5 +1,5 @@
 # MusicPlayerWidget
-This is simple MusicPlayerWidget. It supports the shuffle function to play a random mp3 file which is chosen by MusicPlayerWidget among all mpe files in the primary external storage directory on Android device.
+This is simple MusicPlayerWidget. It supports the shuffle function to play a random mp3 file which is chosen by MusicPlayerWidget among all mp3 files in the primary external storage directory on Android device.
 
 ## Notice
 You have to allow the permission to access the primary external storage for Android 6.0 supported device. 
