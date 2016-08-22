@@ -3,7 +3,7 @@ This is simple MusicPlayerWidget.
 
 ## Notice
 When I carried out the instrumented unit test for Service, I commented below code(the line) colling startForeground(true).
-Please comment below code(the line) whenever you run the instrumented unit test for Service in PlayerService.java :
+Please comment(block) below code whenever you run the instrumented unit test for Service in PlayerService.java :
 stopForeground(true) & startForeground(NOTIFICATION_ID, mNotificationBuilder.build());
 
 ##Screenshots
