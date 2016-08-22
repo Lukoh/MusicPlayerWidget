@@ -2,7 +2,7 @@
 This is simple MusicPlayerWidget. It supports the shuffle function to play a random mp3 file which is chosen by MusicPlayerWidget among all mpe files in the primary external storage directory on Android device.
 
 ## Notice
-You have to allow the permition to access the primary external storage on Android 6.0 supported device. 
+You have to allow the permission to access the primary external storage on Android 6.0 supported device. 
 
 When I carried out the instrumented unit test for Service, I commented below code(the line) calling startForeground() & startForeground() methods in PlayerService.java file.
 Please comment(block) below code whenever you run the instrumented unit test for Service in PlayerService.java file :
