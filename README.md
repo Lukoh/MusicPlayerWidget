@@ -2,8 +2,8 @@
 This is simple MusicPlayerWidget.
 
 ## Notice
-When I carried out the instrumented unit test for Service, I commented below code(the line) calling startForeground() & startForeground() methods.
-Please comment(block) below code whenever you run the instrumented unit test for Service in PlayerService.java :
+When I carried out the instrumented unit test for Service, I commented below code(the line) calling startForeground() & startForeground() methods in PlayerService.java file.
+Please comment(block) below code whenever you run the instrumented unit test for Service in PlayerService.java file :
 
 stopForeground(true) & startForeground(NOTIFICATION_ID, mNotificationBuilder.build());
 
