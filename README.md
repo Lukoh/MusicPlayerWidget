@@ -3,6 +3,7 @@ This is simple MusicPlayerWidget. It supports the shuffle function to play a ran
 
 ## Notice
 You have to allow the permission to access the primary external storage for Android 6.0 supported device. 
+Please refer to the first screen-shot picture.
 
 When I carried out the instrumented unit test for Service, I commented below code(the line) calling startForeground() & startForeground() methods in PlayerService.java file.
 Please comment(block) below code whenever you run the instrumented unit test for Service in PlayerService.java file :
