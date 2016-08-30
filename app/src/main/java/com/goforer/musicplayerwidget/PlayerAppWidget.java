@@ -152,19 +152,19 @@ public class PlayerAppWidget extends AppWidgetProvider {
         for (int appWidgetId : mAppWidgetIds) {
             switch(state) {
                 case PLAYER_STATE_PLAY:
-                    mViews.setInt(R.id.btn_play, "setBackgroundResource", R.color.colorAccent);
+                    mViews.setInt(R.id.btn_play, "setBackgroundResource", R.color.colorSelectedButton);
                     mViews.setInt(R.id.btn_pause, "setBackgroundResource", R.color.colorButton);
                     mViews.setInt(R.id.btn_stop, "setBackgroundResource", R.color.colorButton);
                     break;
                 case PLAYER_STATE_PAUSE:
                     mViews.setInt(R.id.btn_play, "setBackgroundResource", R.color.colorButton);
-                    mViews.setInt(R.id.btn_pause, "setBackgroundResource", R.color.colorAccent);
+                    mViews.setInt(R.id.btn_pause, "setBackgroundResource", R.color.colorSelectedButton);
                     mViews.setInt(R.id.btn_stop, "setBackgroundResource", R.color.colorButton);
                     break;
                 case PLAYER_STATE_STOP:
                     mViews.setInt(R.id.btn_play, "setBackgroundResource", R.color.colorButton);
                     mViews.setInt(R.id.btn_pause, "setBackgroundResource", R.color.colorButton);
-                    mViews.setInt(R.id.btn_stop, "setBackgroundResource", R.color.colorAccent);
+                    mViews.setInt(R.id.btn_stop, "setBackgroundResource", R.color.colorSelectedButton);
                     break;
                 default:
                     break;
