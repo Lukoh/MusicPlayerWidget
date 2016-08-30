@@ -14,13 +14,13 @@ stopForeground(true) & startForeground(NOTIFICATION_ID, mNotificationBuilder.bui
 Here is [demo video](https://youtu.be/25Pp254OEbg). Please watch this demo video if you'd like to know how MusicPlayerWidget runs.
 
 ##Screenshots
-<img src="https://github.com/Lukoh/MusicPlayerWidget/blob/master/Screenshot_11.png" alt="Log-in Demo" width="350" />
+<img src="https://github.com/Lukoh/MusicPlayerWidget/blob/master/Screenshot_20.png" alt="Log-in Demo" width="350" />
 &nbsp;
-<img src="https://github.com/Lukoh/MusicPlayerWidget/blob/master/Screenshot_13.png" alt="Log-in Demo" width="350" />
+<img src="https://github.com/Lukoh/MusicPlayerWidget/blob/master/Screenshot_21.png" alt="Log-in Demo" width="350" />
 &nbsp;
-<img src="https://github.com/Lukoh/MusicPlayerWidget/blob/master/Screenshot_10.png" alt="Log-in Demo" width="350" />
+<img src="https://github.com/Lukoh/MusicPlayerWidget/blob/master/Screenshot_22.png" alt="Log-in Demo" width="350" />
 &nbsp;
-<img src="https://github.com/Lukoh/MusicPlayerWidget/blob/master/Screenshot_12.png" alt="Log-in Demo" width="350" />
+<img src="https://github.com/Lukoh/MusicPlayerWidget/blob/master/Screenshot_23.png" alt="Log-in Demo" width="350" />
 
 # License
 ```
