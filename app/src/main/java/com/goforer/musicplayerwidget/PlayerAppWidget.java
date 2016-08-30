@@ -105,7 +105,7 @@ public class PlayerAppWidget extends AppWidgetProvider {
         }
 
         if (ACTION_STATE_CHANGE.equals(action)) {
-            updatePlayerState(context, intent.getIntExtra(EXTRA_PLAYER_STATE, 0));
+            updatePlayerState(intent.getIntExtra(EXTRA_PLAYER_STATE, 0));
         } else if (ACTION_TITLE_CHANGE.equals(action)) {
             updateTitle(intent.getStringExtra(EXTRA_SONG_FILE_NAME),
                     intent.getStringExtra(EXTRA_SONG_ALBUM_TITLE));
@@ -144,58 +144,27 @@ public class PlayerAppWidget extends AppWidgetProvider {
     /**
      * Update the current MPlayer Widget state.
      *
-     * @param context The Context in which the receiver is running
      * @param state the current MPlayer state
      *               : State -  {PLAYER_STATE_PLAY, PLAYER_STATE_PAUSE, PLAYER_STATE_STOP}
      */
-    private void updatePlayerState(Context context, int state) {
+    private void updatePlayerState(int state) {
         // There may be multiple widgets active, so update all of them
         for (int appWidgetId : mAppWidgetIds) {
             switch(state) {
                 case PLAYER_STATE_PLAY:
-                    mViews.setTextViewText(R.id.btn_play,
-                            context.getResources().getString(R.string.button_playing));
-                    mViews.setTextViewText(R.id.btn_pause,
-                            context.getResources().getString(R.string.button_pause));
-                    mViews.setTextViewText(R.id.btn_stop,
-                            context.getResources().getString(R.string.button_stop));
-
-                    mViews.setTextColor(R.id.btn_play,
-                            context.getResources().getColor(R.color.colorAccent));
-                    mViews.setTextColor(R.id.btn_pause,
-                            context.getResources().getColor(R.color.colorWhite));
-                    mViews.setTextColor(R.id.btn_stop,
-                            context.getResources().getColor(R.color.colorWhite));
+                    mViews.setInt(R.id.btn_play, "setBackgroundResource", R.color.colorAccent);
+                    mViews.setInt(R.id.btn_pause, "setBackgroundResource", R.color.colorButton);
+                    mViews.setInt(R.id.btn_stop, "setBackgroundResource", R.color.colorButton);
                     break;
                 case PLAYER_STATE_PAUSE:
-                    mViews.setTextViewText(R.id.btn_play,
-                            context.getResources().getString(R.string.button_play));
-                    mViews.setTextViewText(R.id.btn_pause,
-                            context.getResources().getString(R.string.button_paused));
-                    mViews.setTextViewText(R.id.btn_stop,
-                            context.getResources().getString(R.string.button_stop));
-
-                    mViews.setTextColor(R.id.btn_play,
-                            context.getResources().getColor(R.color.colorWhite));
-                    mViews.setTextColor(R.id.btn_pause,
-                            context.getResources().getColor(R.color.colorAccent));
-                    mViews.setTextColor(R.id.btn_stop,
-                            context.getResources().getColor(R.color.colorWhite));
+                    mViews.setInt(R.id.btn_play, "setBackgroundResource", R.color.colorButton);
+                    mViews.setInt(R.id.btn_pause, "setBackgroundResource", R.color.colorAccent);
+                    mViews.setInt(R.id.btn_stop, "setBackgroundResource", R.color.colorButton);
                     break;
                 case PLAYER_STATE_STOP:
-                    mViews.setTextViewText(R.id.btn_play,
-                            context.getResources().getString(R.string.button_play));
-                    mViews.setTextViewText(R.id.btn_pause,
-                            context.getResources().getString(R.string.button_pause));
-                    mViews.setTextViewText(R.id.btn_stop,
-                            context.getResources().getString(R.string.button_stopped));
-
-                    mViews.setTextColor(R.id.btn_play,
-                            context.getResources().getColor(R.color.colorWhite));
-                    mViews.setTextColor(R.id.btn_pause,
-                            context.getResources().getColor(R.color.colorWhite));
-                    mViews.setTextColor(R.id.btn_stop,
-                            context.getResources().getColor(R.color.colorAccent));
+                    mViews.setInt(R.id.btn_play, "setBackgroundResource", R.color.colorButton);
+                    mViews.setInt(R.id.btn_pause, "setBackgroundResource", R.color.colorButton);
+                    mViews.setInt(R.id.btn_stop, "setBackgroundResource", R.color.colorAccent);
                     break;
                 default:
                     break;

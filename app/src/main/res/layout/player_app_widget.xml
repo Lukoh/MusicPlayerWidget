@@ -1,13 +1,13 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#09C"
+    android:background="@drawable/background"
     android:padding="@dimen/widget_margin">
 
     <LinearLayout
         android:orientation="vertical"
         android:id="@+id/container_widget"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
         <LinearLayout
@@ -16,14 +16,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="2dp"
-            android:gravity="center_horizontal">
+            android:gravity="left">
 
             <TextView
                 android:id="@+id/tv_file_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
+                android:gravity="left"
+                android:layout_marginLeft="18dp"
                 android:textStyle="bold"
+                android:textColor="@color/colorSongName"
                 android:text="@string/song_title" />
 
         </LinearLayout>
@@ -33,35 +35,47 @@
             android:id="@+id/container_controller"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="7dp"
             android:layout_gravity="center_horizontal">
 
-            <Button
-                android:id="@+id/btn_play"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="-4dp"
                 android:layout_marginLeft="18dp"
                 android:layout_marginRight="10dp"
-                android:background="#55010101"
-                android:text="@string/button_play" />
+                android:src="@drawable/ic_player" />
 
-            <Button
+            <ImageButton
+                android:id="@+id/btn_play"
+                android:layout_width="72dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="#99010101"
+                android:text="@string/button_play"
+                android:src="@android:drawable/ic_media_play" />
+
+            <ImageButton
                 android:id="@+id/btn_pause"
-                android:layout_width="wrap_content"
+                android:layout_width="72dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="10dp"
-                android:background="#55010101"
-                android:text="@string/button_pause" />
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="#99010101"
+                android:text="@string/button_pause"
+                android:src="@android:drawable/ic_media_pause" />
 
-            <Button
+            <ImageButton
                 android:id="@+id/btn_stop"
-                android:layout_width="wrap_content"
+                android:layout_width="72dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="17dp"
-                android:background="#55010101"
-                android:text="@string/button_stop" />
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="#99010101"
+                android:text="@string/button_stop"
+                android:src="@android:drawable/ic_media_next" />
 
         </LinearLayout>
 
@@ -70,16 +84,17 @@
             android:id="@+id/bar_album"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="2dp"
-            android:gravity="center_horizontal">
+            android:layout_marginTop="4dp"
+            android:gravity="left">
 
             <TextView
                 android:id="@+id/tv_album_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
+                android:gravity="left"
+                android:layout_marginLeft="18dp"
                 android:textStyle="bold"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/colorSongTitle"
                 android:text="@string/album_title" />
 
         </LinearLayout>
