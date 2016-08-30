@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MusicPlayerWidget</string>
+    <string name="appwidget_text">MusicPlayer</string>
+    <string name="add_widget">Add widget</string>
+    <string name="button_play">Play</string>
+    <string name="button_playing">Playing</string>
+    <string name="button_stop">Stop</string>
+    <string name="button_stopped">Stopped</string>
+    <string name="button_pause">Pause</string>
+    <string name="button_paused">Paused</string>
+    <string name="song_title">Song Name</string>
+    <string name="album_title">Album Title</string>
+    <string name="player_error_message">Player error! Please restart it.</string>
+    <string name="player_no_album_title">Unknown Album</string>
+    <string name="player_no_file">There is no file to play.</string>
+</resources>
