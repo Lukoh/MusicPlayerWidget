@@ -24,7 +24,7 @@ Here is [demo video](https://youtu.be/hjvP-Nrx50g). Please watch this demo video
 
 # License
 ```
-Copyright 2016 Lukoh Nam
+Copyright 2016 Lukoh Nam, goForer
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
